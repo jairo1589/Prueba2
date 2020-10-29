@@ -62,8 +62,7 @@ public class Menu extends AppCompatActivity {
 
         listaClientes.add("Axel");
         listaClientes.add("Roxana");
-        listaClientes.add("Betzabe");
-        listaClientes.add("Matias");
+
 
         listaCreditos.add("Credito Hipotecario");
         listaCreditos.add("Credito Automotriz");

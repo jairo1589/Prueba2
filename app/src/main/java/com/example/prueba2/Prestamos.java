@@ -51,24 +51,24 @@ public class Prestamos extends AppCompatActivity {
         {
 
             int saldo = credit_hipot + 750000;
-            txt.setText("El valor Smart band: " + saldo);
+            txt.setText("El saldo total es de: " + saldo);
         }
         if(cliente.equals("Axel") && credito.equals("Credito Automotriz"))
         {
             int saldo = credit_auto + 750000;
-            txt.setText("El valor Smart band: " + saldo);
+            txt.setText("El saldo total es de: " + saldo);
         }
 
 
         if(cliente.equals("Roxana") && credito.equals("Credito Hipotecario"))
         {
             int saldo = credit_hipot + 900000;
-            txt.setText("El valor Smart band: " + saldo);
+            txt.setText("El saldo total es de: " + saldo);
         }
         if(cliente.equals("Axel") && credito.equals("Credito Automotriz"))
         {
             int saldo = credit_auto + 900000;
-            txt.setText("El valor Smart band: " + saldo);
+            txt.setText("El saldo total es de: " + saldo);
         }
 
     }
@@ -83,34 +83,34 @@ public class Prestamos extends AppCompatActivity {
         int credit_auto = cl.getCredito_automotriz();
         int credit_hipot = cl.getCredito_hipotecario();
         int cuota_auto = cl.getCuotas_automotriz();
-        int cutoa_hipot = cl.getCuotas_hiopotecario();
+        int cuota_hipot = cl.getCuotas_hiopotecario();
 
         if(cliente.equals("Axel") && credito.equals("Credito Hipotecario"))
         {
 
             int saldo = credit_hipot + 750000;
-            int cuota = saldo / cutoa_hipot;
-            txt.setText("El valor Smart band: " + cuota);
+            int cuota = saldo / cuota_hipot;
+            txt.setText("12 cuotas con un total de: " + cuota);
         }
         if(cliente.equals("Axel") && credito.equals("Credito Automotriz"))
         {
             int saldo = credit_hipot + 750000;
             int cuota = saldo / cuota_auto;
-            txt.setText("El valor Smart band: " + cuota);
+            txt.setText("8 cuotas con un total de: " + cuota);
         }
 
 
         if(cliente.equals("Roxana") && credito.equals("Credito Hipotecario"))
         {
             int saldo = credit_auto + 900000;
-            int cuota = saldo / cutoa_hipot;
-            txt.setText("El valor Smart band: " + cuota);
+            int cuota = saldo / cuota_hipot;
+            txt.setText("12 cuotas con un total de: " + cuota);
         }
         if(cliente.equals("Axel") && credito.equals("Credito Automotriz"))
         {
             int saldo = credit_auto + 900000;
             int cuota = saldo / cuota_auto;
-            txt.setText("El valor Smart band: " + cuota);
+            txt.setText("8 cuotas con un total de: " + cuota);
         }
 
     }
